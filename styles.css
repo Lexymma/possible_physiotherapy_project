@@ -422,6 +422,11 @@ article h2 {
   border-radius: 0.2rem;
 }
 
+.footer-box .logo-container, .footer-box .asset-container {
+  display: flex;
+  align-items: flex-end;
+}
+
 /* Media queries */
 @media screen and (min-width: 1573px) {
   body {
@@ -533,6 +538,11 @@ article h2 {
   .img-box > img {
     width: 85%;
   }
+
+  .footer img,
+  .foota-logo {
+    height: 5rem;
+  }
 }
 
 /* 944px screen size */
@@ -634,19 +644,15 @@ article h2 {
     z-index: 1000;
   }
 
-  .footer img,
-  .foota-logo {
-    height: 5rem;
-  }
-
   .footer div p {
     font-size: 1rem;
     padding-top: 2rem;
     /* color: rgb(51, 51, 51, 0.5); */
   }
 
-  .footer-box > .asset-container {
+ .asset-container {
     display: flex;
+    align-items: flex-start;
   }
 
   .footer {
