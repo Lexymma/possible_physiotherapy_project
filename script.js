@@ -30,7 +30,6 @@ mobileNav.addEventListener("click", function () {
 
 const allLinks = document.querySelectorAll("a:link");
 const navLinks = document.querySelectorAll(".nav-links");
-console.log(navLinks);
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -74,7 +73,7 @@ function checkFlexGap() {
   document.body.appendChild(flex);
   var isSupported = flex.scrollHeight === 1;
   flex.parentNode.removeChild(flex);
-  console.log(isSupported);
+  // console.log(isSupported);
 
   if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
