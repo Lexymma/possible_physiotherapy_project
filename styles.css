@@ -61,10 +61,6 @@ header img {
   display: none;
 }
 
-/* .sticky .section-hero {
-  margin-top: 9.6rem;
-} */
-
 nav ul {
   display: flex;
   list-style: none;
@@ -122,15 +118,37 @@ nav ul li {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 1rem;
 }
 
+.hero-inner {
+  grid-column: 1 / -1;
+}
+
+.hero  p .author {
+  font-size: 25px;
+}
+
 .hero p {
-  font-size: 1.4vw;
   margin: 1rem;
   padding: 1rem;
 }
+
+figcaption {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+blockquote {
+font-size: 1.2rem;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 50%;
+  padding: 0.2rem;
+  border-radius: 10px;;
+}
+
 
 article h2 {
   font-size: 3rem;
@@ -148,7 +166,7 @@ article h2 {
 
 .about-us-box p {
   margin-top: 2rem;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   text-align: left;
   line-height: 1.5;
   padding-left: 2rem;
@@ -332,7 +350,6 @@ article h2 {
   background-color: green;
   font-weight: 500;
   text-transform: capitalize;
-  /* overflow: ; */
 }
 
 .footer {
@@ -398,62 +415,22 @@ article h2 {
 }
 
 /* Media queries */
-
-/* Extra large screens */
-@media screen and (min-width: 2010px) {
-  .wwd-text li span {
-    font-size: 1.5vw;
+@media screen and (min-width: 1573px) {
+  body {
+    width: 1572px;
+    margin: 0 auto;
   }
-
-  .form {
-    width: 28rem;
-  }
-
-  .email,
-  .tel {
-    font-size: 1vw;
-  }
-
-  .sm-container > a {
-    font-size: 1vw;
-  }
-
-}
-
-@media screen and (max-width: 2000px) {
-  .about-us-box > p {
-    margin-top: 2rem;
-    font-size: 1.8rem;
-    text-align: justify;
-    line-height: 1.5;
-  }
-
-  .img-box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .email, .tel {
-    font-size: 1.2rem;
-  }
-
-}  
-
-@media screen and (max-width: 1880px) {
+  
   .about-us-box > p {
     font-size: 1.5rem;
   }
 
-  .wwd-text li {
-    margin-bottom: 0.4rem;
+  blockquote {
+    font-size: 1.4rem;
   }
-}
 
-@media screen and (max-width: 1572px) {
-  .about-us-box > p {
-    font-size: 1.3rem;
+  figcaption {
+    font-size: 1.4rem;
   }
 
   .wwd-text li {
@@ -475,8 +452,43 @@ article h2 {
     align-items: center;
   }
 
-  h1 {
+  .img-box > img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 1572px) {
+  .about-us-box > p {
     font-size: 1.5rem;
+  }
+
+  blockquote {
+    font-size: 1.4rem;
+  }
+
+  figcaption {
+    font-size: 1.4rem;
+  }
+
+  .wwd-text li {
+    margin-bottom: 0;
+  }
+
+  .wwd-text li span {
+    font-size: 1.1rem;
+  }
+
+  .about-us-box {
+    gap: 2rem;
+  }
+
+  .collage {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    align-items: center;
   }
 
   .img-box > img {
@@ -486,20 +498,31 @@ article h2 {
 }
 
 @media screen and (max-width: 1300px) {
-  .collage {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    align-items: center;
+  blockquote {
+    font-size: 1.4rem;
+  }
+
+  figcaption {
+    font-size: 1.4rem;
+  }
+
+
+
+  .about-us-box > p {
+    font-size: 17px;
+  }
+
+  .what-we-do {
+    grid-template-columns: 1fr;
+  }
+
+  .img-box > img {
+    width: 85%;
   }
 }
 
 /* 944px screen size */
 @media screen and (max-width: 59em) {
-  h1 {
-    font-size: 1.8rem;
-  }
-
   .nav-link {
     font-size: 1.4rem;
   }
@@ -614,13 +637,14 @@ article h2 {
   }
 }
 
+/* Screens below 704px (smaller tablets */
 @media screen and (max-width: 44em) {
   nav ul {
     font-size: 1.2rem;
   }
 
   h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   .hero {
@@ -636,17 +660,16 @@ article h2 {
   }
 }
 
-@media (min-width: 945px) and (max-width: 1300px) {
-  .about-us-box > p {
-    font-size: 15px;
-  }
-
-  .img-box > img {
-    width: 85%;
-  }
-}
-
+/* Small screen phones: Below 544px */
 @media (max-width: 34em) {
+  .hero p {
+    margin: 0.1rem;
+  }
+
+  blockquote {
+    width: 60%
+  }
+
   .about-us-box > p {
     font-size: 1rem;
     margin-top: 0.5rem;
