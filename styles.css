@@ -722,8 +722,13 @@ article h2 {
     margin: 0.1rem;
   }
 
+  figcaption {
+    font-size: 0.8rem;
+  }
+
   blockquote {
-    width: 60%
+    width: 60%;
+    font-size: 0.8rem;
   }
 
   .about-us-box > p {
@@ -762,10 +767,34 @@ article h2 {
     font-size: 1rem;
   }
 
+  .footer-box {
+    gap: 5rem;
+  }
 
   .footer div p {
     font-size: 0.8rem;
     padding-top: 2rem;
     /* color: rgb(51, 51, 51, 0.5); */
   }
+}
+
+/* Smallest screens */
+@media screen and (max-width: 450px) {
+  figure {
+    margin-top: 2rem;
+  }
+
+  /* figcaption {
+    font-size: 0.6rem;
+  }
+
+  blockquote {
+    width: 60%;
+    font-size: 0.6rem;
+  } */
+
+  .contact-section > h3, article h2 {
+    font-size: 2rem;
+  }
+
 }
