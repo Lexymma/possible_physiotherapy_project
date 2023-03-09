@@ -18,9 +18,13 @@ html {
 }
 
 body {
-  background-color: rgb(107, 180, 245);
+  background-color: purple;
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
+}
+
+.page-container {
+  background-color: rgb(107, 180, 245);
 }
 
 .header-logo-container {
@@ -133,6 +137,10 @@ h1 {
 .hero p {
   margin: 1rem;
   padding: 1rem;
+}
+
+figure {
+  margin-top: 4rem;
 }
 
 figcaption {
@@ -389,8 +397,8 @@ article h2 {
 
 .top {
   position: fixed;
-  bottom: 140px;
-  right: 10px;
+  bottom: 130px;
+  right: 8px;
   padding: 15px 15px;
   background: #fff;
   border-radius: 5px;
@@ -423,6 +431,10 @@ article h2 {
   
   .about-us-box > p {
     font-size: 1.5rem;
+  }
+
+  figure {
+    margin-top: 4rem;
   }
 
   blockquote {
@@ -468,6 +480,10 @@ article h2 {
     font-size: 1.4rem;
   }
 
+  figure {
+    margin-top: 6rem;
+  }
+
   figcaption {
     font-size: 1.4rem;
   }
@@ -506,8 +522,6 @@ article h2 {
     font-size: 1.4rem;
   }
 
-
-
   .about-us-box > p {
     font-size: 17px;
   }
@@ -531,11 +545,22 @@ article h2 {
     height: 20rem;
   }
 
-  .quotes {
+  blockquote {
     font-size: 1.2rem;
   }
+
+  .hero p {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+
+  figure {
+    margin-top: 4rem;
+  }
+
   .about-us-box > p {
     padding: 1rem;
+    font-size: 1.2rem;
   }
 
   header img {
@@ -611,11 +636,11 @@ article h2 {
 
   .footer img,
   .foota-logo {
-    height: 3rem;
+    height: 5rem;
   }
 
   .footer div p {
-    font-size: 0.6rem;
+    font-size: 1rem;
     padding-top: 2rem;
     /* color: rgb(51, 51, 51, 0.5); */
   }
@@ -626,6 +651,7 @@ article h2 {
 
   .footer {
     align-items: flex-end;
+    margin-top: 5rem;
   }
 
   .top {
@@ -635,10 +661,30 @@ article h2 {
   .footer-box {
     gap: 10rem;
   }
+
+  .top {
+    position: fixed;
+    bottom: 130px;
+    right: 30px;
+    padding: 15px 15px;
+    background: #fff;
+    border-radius: 5px;
+    color: black;
+    font-size: 1.5rem;
+  }
 }
 
 /* Screens below 704px (smaller tablets */
 @media screen and (max-width: 44em) {
+
+  blockquote {
+    font-size: 1.2rem;
+  }
+
+  figcaption {
+    font-size: 1.2rem;
+  }
+
   nav ul {
     font-size: 1.2rem;
   }
@@ -649,6 +695,10 @@ article h2 {
 
   .hero {
     grid-template-columns: 1fr;
+  }
+
+  .hero p {
+    margin: 0.1rem;
   }
 
   .quotes {
@@ -704,5 +754,12 @@ article h2 {
 
   .form .btn {
     font-size: 1rem;
+  }
+
+
+  .footer div p {
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    /* color: rgb(51, 51, 51, 0.5); */
   }
 }
